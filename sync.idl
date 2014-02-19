@@ -1,0 +1,19 @@
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Student name: Lance Baker 
+// Course: SENG3400 (Network & Distributed Computing)
+// Student number: c3128034
+// Assignment title: SENG3400 Assignment 3 
+// File name: sync.idl
+// Created: 15-10-2010
+// Last Change: 15-10-2010
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Defines the module, and interfaces.
+module sync {
+	// The Sync Interface (which will be used to generate the stub code and to define
+	// the methods which will be used by the corba service).
+    interface Sync {
+		 // The getCharacter() method declaration for the random character service.
+		char getCharacter();
+    };
+};
