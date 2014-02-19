@@ -26,7 +26,7 @@ The following output of the client application demonstrates two synchronous type
 letter character stored within the client for each iteration. Both types invoke the 
 service to receive the random letter character at iteration number 05. 
 
-•	The deferred synchronous type sends the request to the service through a separate 
+	The deferred synchronous type sends the request to the service through a separate 
 	thread, the thread is then started, and the response from the service invocation 
 	is temporarily stored until the client requests for it.
 
@@ -43,7 +43,7 @@ service to receive the random letter character at iteration number 05.
 	changed value from iteration 11 to 15.
 
 
-• 	The asynchronous type uses another thread to make the service call. The client is 
+	The asynchronous type uses another thread to make the service call. The client is 
 	passed as a reference, and once a response is received from the service it will 
 	invoke the synchronisation on the client without the client issuing for the request. 
 	The loop will continue for an indeterminate number of iterations until synchronisation 
@@ -55,6 +55,7 @@ service to receive the random letter character at iteration number 05.
 ---------------------
 Deferred Synchronous
 ---------------------
+
 01  - *
 02  - *
 03  - *
@@ -70,6 +71,7 @@ Deferred Synchronous
 13  - Q
 14  - Q
 15  - Q
+
 ---------------------
 Asynchronous
 ---------------------
@@ -99,4 +101,5 @@ Asynchronous
 24  - C
 25  - C
 26  - C
+
 ---------------------
